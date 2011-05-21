@@ -1,0 +1,23 @@
+this is just a usefull thing for peoples working with java.util.Locale
+
+the main problem is about get the nearest Locale in a Set<Locale>
+
+
+example :
+---------------------------------------------------
+LocaleSet ls = new LocaleSet();
+ls.add(Locale.UK);
+ls.add(Locale.FRANCE);
+ls.add(Locale.CHINA);
+
+List<Locale> ll = new ArrayList<Locale>();
+ll.add(Locale.US);
+
+ls.getTheBestLocale(ll) return Locale.UK
+
+---------------------------------------------------
+
+you can change the default choice for a LocaleSet with the ls.setSpecificLocaleDefault(mylocale) method
+default is system Locale
+
+
