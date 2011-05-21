@@ -20,4 +20,4 @@ ls.getTheBestLocale(ll) return Locale.UK
 you can change the default choice for a LocaleSet with the ls.setSpecificLocaleDefault(mylocale) method
 default is system Locale
 
-
+look at the tests for more informations
