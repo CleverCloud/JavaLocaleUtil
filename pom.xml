@@ -1,0 +1,60 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>com.clevercloud.utils</groupId>
+   <artifactId>locale</artifactId>
+   <packaging>jar</packaging>
+   <version>1.0</version>
+   <name>locale</name>
+   <url>http://github.com/CleverCloud/JavaLocaleUtil</url>
+   <build>
+      <extensions>
+         <extension>
+            <groupId>org.apache.maven.wagon</groupId>
+            <artifactId>wagon-ssh</artifactId>
+         </extension>
+      </extensions> 
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>2.3</version>
+            <configuration>
+               <source>1.6</source>
+               <target>1.6</target>
+            </configuration>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>2.3</version>
+         </plugin>
+      </plugins>
+   </build>
+   <dependencies>
+      <dependency>
+         <groupId>junit</groupId>
+         <artifactId>junit</artifactId>
+         <version>4.8.2</version>
+         <scope>test</scope>
+         <type>jar</type>
+      </dependency>
+   </dependencies>
+   <distributionManagement>
+      <repository>
+         <uniqueVersion>false</uniqueVersion>
+         <id>private-cc</id> 
+         <name>Repo Clever cloud privé</name>
+         <url>sftp://maven.stand-innovation.org/maven</url>
+         <layout>default</layout>
+      </repository>
+      <snapshotRepository>
+         <uniqueVersion>true</uniqueVersion>
+         <id>private-cc</id>
+         <name>Repo pour les snapshots</name>
+         <url>sftp://maven.stand-innovation.org/snapshots</url>
+         <layout>default</layout>
+      </snapshotRepository>
+   </distributionManagement>
+</project>
