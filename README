@@ -1,6 +1,6 @@
-this is just a usefull thing for peoples working with java.util.Locale
+This is just a useful thing for people working with java.util.Locale
 
-the main problem is about get the nearest Locale in a Set<Locale>
+The main problem is about getting the nearest Locale in a Set<Locale>
 
 
 example :
@@ -17,7 +17,7 @@ ls.getTheBestLocale(ll) return Locale.UK
 
 ---------------------------------------------------
 
-you can change the default choice for a LocaleSet with the ls.setSpecificLocaleDefault(mylocale) method
-default is system Locale
+You can change the default choice for a LocaleSet with the ls.setSpecificLocaleDefault(mylocale) method
+The default is system Locale
 
-look at the tests for more informations
+Look at the tests for more information
