@@ -21,3 +21,7 @@ You can change the default choice for a LocaleSet with the ls.setSpecificLocaleD
 The default is system Locale
 
 Look at the tests for more information
+
+
+********************************************
+This project is realease under the MIT licence
